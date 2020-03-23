@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        questionNumber = 0;
+        questionNumber = Random.Range(0, questions.Count);
         questionImage.sprite = questions[questionNumber].picture;
         Debug.Log(questions[questionNumber].answer);
     }
